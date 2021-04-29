@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<Data>(
+      //Data is the type. it could be a String or any other data type
       //we wrapped the topmost widget which we want tohe data in with provier and specify the type
       create: (context) =>
           Data(), //the data we want to pass on to the child widgets. If the type of the StChangeNotifierProver was string , we would have passed a 'string' instead of Data()
